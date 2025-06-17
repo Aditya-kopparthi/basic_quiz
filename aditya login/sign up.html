@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>sign up page</title>
+    <link rel="icon" type="image/x-icon" href="free-30-instagram-stories-icons33_122580.ico">
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Cuprum:wght@500&family=Racing+Sans+One&display=swap');
+         body {
+            font-family: Arial, sans-serif;
+            background-image: url(annie-spratt-cMr19bJU1uY-unsplash.jpg); /* Replace with your background image URL */
+            background-size:cover;
+            background-position: bottom;
+            height: 100vh;
+            font-family: 'Croissant One', cursive;
+        }
+        .name{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.203); /* Adjust the transparency */
+            padding: 10px 10px;
+            border-radius: 60px;
+            text-align: center;
+            width: 356px;
+            height: 669px;
+            padding: 10px 30px;
+        }
+        h2 {
+            color: #ffffff;
+        }
+        .nameenter input[type="text"],
+        .nameenter input[type="tel"],
+        .nameenter input[type="email"],
+        .nameenter input[type="password"],
+        .nameenter input[type="date"] 
+                {
+                 width: 50%;
+                 margin-top: 10px;
+                 padding: 7px;
+                 border-radius: 40px;
+                 width: 93%;
+                height: 18px;
+                font-family: 'Racing Sans One', cursive;
+                background-color: rgba(221, 128, 57, 0.234);
+                
+                }
+        #gender{
+                 margin-top: 10px;
+                 padding: 7px;
+                 border-radius: 40px;
+                 width: 98%;
+                height: 38px;
+                font-family: 'Racing Sans One', cursive;
+                background-color: rgba(221, 128, 57, 0.234);
+                }
+        .signup-link {
+            color: #ff0000b4;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        .signup{
+        text-align: right;
+        color: #fff;
+        padding-right: 14%;
+        }
+        .nameenter input[type="submit"] {
+            background-color: #e60d0d5f;
+            color: #ffffff;
+            cursor: pointer;
+            width: 40%;
+            padding: 10px;
+            margin-top: 7px;
+            border: none;
+            border-radius: 50px;
+            align-items: center;
+            font-family: 'Cuprum', sans-serif;
+            font-size:small;
+        }
+        .nameenter input[type="submit"]:hover {
+            background-color: #0000005f;
+            color: #ffffff;
+            cursor: pointer;
+            width: 40%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 50px;
+            align-items: center;
+            font-family: 'Cuprum', sans-serif;
+            font-size:small;
+            transform: scale(1.4);
+            transition: 0.5s;
+        }
+        .nameenter input[type="text"]::placeholder,
+        .nameenter input[type="tel"]::placeholder,
+        .nameenter input[type="email"]::placeholder,
+        .nameenter input[type="password"]::placeholder
+        {
+            color: #ffffffe6;
+        }
+        .nameenter input[type="date"]{
+            color: #ffffffa6;
+        }
+        #gender{
+            color: #ffffffa6;
+        }
+    </style>
+</head>
+<body>
+<div class="name">
+    <h2>Let us know you:</h2>
+    <form class="nameenter" id="registrationForm">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Middle name (optional)">
+        <input type="text" placeholder="Last Name" required>
+        <input type="text" placeholder="Surname" required>
+        <input type="date" placeholder="DOB" required>
+        <select id="gender">
+            <option value="gender">gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="tel" id="num" placeholder="Enter your mobile number"onsubmit="return validatephno()" required>
+        <input type="text" placeholder="house no,street no,area,city,district,state,country" required>
+        <input type="email" id="email" placeholder="Enter email" onsubmit="return validateemail()" required>
+        <input type="password" id="password" placeholder="Set Password" onsubmit="return checkpassword()" required>
+        <input type="password" id="confirmPassword" placeholder="Reenter Password"onsubmit="return checkpassword1()" required>
+        <input type="submit" value="Create Account">
+        <p class="signup">Already a member? <a class="signup-link" href="login.html">Login here</a></p>
+    </form>
+</div>
+</body> 
+</html>

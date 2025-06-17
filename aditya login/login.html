@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" type="image/x-icon" href="free-30-instagram-stories-icons33_122580.ico">
+    <script src="script.js"></script>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Cuprum:wght@500&family=Racing+Sans+One&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(annie-spratt-cMr19bJU1uY-unsplash.jpg); /* Replace with your background image URL */
+            background-size:cover;
+            background-position: bottom;
+            font-family: 'Croissant One', cursive;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.404); /* Adjust the transparency */
+            padding: 30px;
+            border-radius: 70px;
+            text-align: center;
+            width: 339px;
+            height: 331.917px;
+        }
+
+        h2 {
+            color: #ffffff8c;
+        }
+
+        .form {
+            margin-top: 50px;
+        }
+
+        .form input[type="text"],
+        .form input[type="password"],
+        .form input[type="submit"] {
+            width: 70%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 50px;
+            align-items: center;
+            font-family: 'Racing Sans One', cursive;
+            background-color: rgba(255, 255, 255, 0.205);
+        }
+
+        .form input[type="submit"] {
+            background-color: #e60d0d5f;
+            color: #ffffff;
+            cursor: pointer;
+            width: 40%;
+            font-family: 'Cuprum', sans-serif;
+        }
+
+        .form input[type="submit"]:hover {
+            background-color: #0000005f;
+            color: #ffffff;
+            width: 40%;
+            font-family: 'Cuprum', sans-serif;
+            transition: 0.5s;
+        }
+        .signup-link {
+            color: #e60d0d98;
+            text-decoration: none;
+            margin-top: 20px;
+            font-family: 'Racing Sans One', cursive;
+        }
+        .signup{
+        text-align: right;
+        color: #ffffff86;
+        font-family: 'Racing Sans One', cursive;
+        }
+        .forgot
+        {
+            text-align: left;
+            color: #ffffff86;
+            font-family: 'Racing Sans One', cursive;
+        }
+        .form input[type="text"]::placeholder,
+        .form input[type="password"]::placeholder{
+            color: #ffffff8c;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form class="form" onsubmit="return validateForm()">
+            <input id="username" type="text" placeholder="Username" required>
+            <input id="password" type="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <p class="forgot"><a>forgot password?</a></p>
+            <p class="signup">new member?
+                <a class="signup-link" href="sign up.html">Sign up here</a></p>
+        </form>
+    </div>
+</body>
+</html>

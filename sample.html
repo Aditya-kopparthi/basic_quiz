@@ -1,0 +1,38 @@
+<script>
+  // ... (existing code)
+      // Selecting form and input elements
+      const form = document.querySelector("form");
+const passwordInput = document.getElementById("password");
+const passToggleBtn = document.getElementById("pass-toggle-btn");
+
+// Function to display error messages
+const showError = (field, errorText) => {
+    field.classList.add("error");
+    const errorElement = document.createElement("small");
+    errorElement.classList.add("error-text");
+    errorElement.innerText = errorText;
+    field.closest(".form-group").appendChild(errorElement);
+}
+  // Function to handle form submission
+  const handleFormData = (e) => {
+    e.preventDefault();
+
+    // Retrieving input elements
+    const fullnameInput = document.getElementById("fullname");
+    const emailInput = document.getElementById("email");
+    const password = passwordInput.value.trim();
+    const dateInput = document.getElementById("date");
+    const genderInput = document.getElementById("gender");
+
+    // ... (existing code)
+
+    // Checking for any remaining errors before form submission
+    const errorInputs = document.querySelectorAll(".form-group .error");
+    if (errorInputs.length > 0) return;
+
+    // Redirecting to another page (replace 'success-page.html' with your actual success page)
+    
+  }
+
+  // ... (existing code)
+</script>

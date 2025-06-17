@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+  body{
+    background-image: url("htt1.webp") ;
+    min-height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .bigcontainer{
+    display:flex;
+    flex-direction: row;
+    margin-top: 170px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+
+  }
+  .heading{
+    background-color:rgb(47, 213, 255);
+    width: 500px;
+    align-content: center;
+    padding-left: 120px;
+    border-radius: 15px;
+    margin-left: 10px;
+  }
+  .dif{
+    font-size: xx-large;
+    font-weight: 900;
+    background-color: azure;
+    color: black;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    transition: .3s ease;
+   
+  }
+  .dif:hover{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+    background-color:rgb(224, 53, 250);
+    transition: 0.15s;
+    cursor: pointer;
+  }
+  .dif:active{
+    background-color: rgb(28, 164, 192);
+    transition: 0.1s;
+  }
+</style>
+  </head>
+<body>
+    <div class="bigcontainer">
+      <div class="heading">
+       <h2>
+        select the difficulty level for Html
+       </h2>
+      </div>
+      <div>
+        <div>
+          <button onclick="window.location.href='index_html_easy.html'" class="dif">
+            Easy
+          </button>
+        </div>
+        <div>
+          <button onclick="window.location.href='index_html_medium.html'" class="dif">
+            Medium
+          </button>
+        </div>
+        <div >
+          <button onclick="window.location.href='index_html_hard.html' " class="dif">
+            Hard
+          </button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

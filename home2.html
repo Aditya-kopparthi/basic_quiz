@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        height: 100vh;
+
+        background-image: url("wall.jpg");
+        background-size: cover;
+      }
+
+      .maths{
+        width: 554px;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+        color: blueviolet;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        border-radius: 10px;
+        transition: .3s ease;
+        
+      }
+      .maths:hover{
+        transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -ms-transform:scale(0.8);
+      }
+    
+
+      
+      .physics:hover{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+      }
+      .chemistry:hover{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+      }
+      .social:hover{
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+      }
+      .physics {
+        width: 554px;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+        color: blueviolet;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 50px;
+        margin-left: 50px;
+     
+        border-radius: 10px;
+        transition: .3s ease;
+      }
+      .chemistry {
+        width: 554px;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+        color: blueviolet;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 50px;
+        margin-left: 50px;
+     
+        border-radius: 10px;
+        transition: .3s ease;
+      }
+      .social{
+        width: 554px;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+        color: blueviolet;
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 50px;
+        margin-left: 50px;
+     
+        border-radius: 10px;
+        transition: .3s ease;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .bigcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .heading {
+        margin-left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">
+      Select any subject from below displayed
+    </h1>
+    <div class="bigcontainer">
+      <div class="container">
+        <a  href="dif_level.html">
+          <img class="maths" src="python_pic.jfif" alt="">
+        </a>
+        <a  href="dif_html.html">
+          <img class="physics" src="html_asd.jfif" alt="">
+        </a>
+        
+      </div>
+      <div class="container">
+        <a  href="dif_cpp.html">
+          <img class="chemistry" src="c++_pic.jfif" alt="">
+        </a>
+        <a  href="dif_c.html">
+          <img class="social" src="c_pic.jfif" alt="">
+        </a>
+      </div>
+    </div>
+
+  </body>
+</html>

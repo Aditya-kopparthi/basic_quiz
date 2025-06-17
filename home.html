@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+  body {
+  background-image: url("4be8e2e2-7958-4512-a383-3b65c0bdb395.jfif");
+}
+
+  .math{
+    width: 554px;
+    height:280px;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    
+  
+  }
+  .container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .bigcontainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .heading{
+    margin-left: 500px;
+  }
+</style>
+  </head>
+  <body>
+    <h2 class="heading">
+      select any subject from below displayed 
+    </h2>
+    <div class="bigcontainer">
+    <div class="container">
+    <div >
+      <button onclick="func(event)" class="math"
+  style="background-image: url('th.jfif');">
+  
+</button>
+    </div>
+    <div >
+      <button onclick="func(event)" class="math">
+        <img style=" 
+         
+          "
+          
+          src = "sketch-math-ckass-working-little-260nw-1370038604.webp" alt="Button Image" >
+
+ 
+
+</button>
+
+    </div>
+    
+    </div>
+    <div class="container">
+      <div>
+      <button class="math">
+        chemistry
+      </button>
+      <button class="math">
+        social
+      </button>
+      
+    </div>
+    </div>
+    </div>
+    <script>
+     function func(event) {
+  window.location.href = "index.html";
+}
+
+    </script>
+  </body>
+</html>
